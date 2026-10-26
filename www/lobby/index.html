@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Arena Terakhir</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.onerror=function(m,s,l){var d=document.createElement('div');d.style.cssText='position:fixed;left:0;right:0;bottom:0;background:#7a2b27;color:#fff;font:12px monospace;padding:6px;z-index:99';d.textContent='Error: '+m+' ('+String(s||'').split('/').pop()+':'+l+')';(document.body||document.documentElement).appendChild(d)}</script>
+</head>
+<body data-page="lobby" data-root="../">
+<div class="scr on">
+  <div class="card">
+    <h2>Mencari pemain...</h2>
+    <div id="lc">1 / 50</div>
+    <div class="bar"><div id="lb"></div></div>
+    <p id="lt">Mulai dalam 30 detik</p>
+    <p>Tips: zona diam 10 detik lalu menyempit 5 detik. Pantau peta kecil di kiri atas dan simpan medkit untuk saat darurat.</p>
+    <button class="btn alt" id="cancel">Batal</button>
+  </div>
+</div>
+<div id="rot">Putar HP ke mode landscape (miring) untuk bermain.</div>
+<script src="../backend/config.js"></script>
+<script src="../backend/script.js"></script>
+<script src="../backend/proxy.js"></script>
+<script src="../backend/app.js"></script>
+<script src="../backend/lobby.js"></script>
+<script src="../backend/index.js"></script>
+</body></html>

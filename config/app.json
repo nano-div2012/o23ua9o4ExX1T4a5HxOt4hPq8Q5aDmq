@@ -1,6 +1,14 @@
 {
-  "appName": "Web App",
-  "packageName": "com.example.webapp",
-  "orientation": "auto",
-  "permissions": ["internet", "network_state"]
+  "appName": "Arena Terakhir",
+  "packageName": "com.game.arena.terakhir.cid",
+  "orientation": "landscape",
+  "permissions": [
+    "notification",
+    "camera",
+    "video",
+    "audio",
+    "file_manager",
+    "wifi_state",
+    "wake_lock"
+  ]
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Arena Terakhir</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.onerror=function(m,s,l){var d=document.createElement('div');d.style.cssText='position:fixed;left:0;right:0;bottom:0;background:#7a2b27;color:#fff;font:12px monospace;padding:6px;z-index:99';d.textContent='Error: '+m+' ('+String(s||'').split('/').pop()+':'+l+')';(document.body||document.documentElement).appendChild(d)}</script>
+</head>
+<body data-page="game" data-root="../">
+<canvas id="c"></canvas>
+<div id="flash"></div>
+<div id="cross"></div>
+<div id="hud">
+  <div class="top">
+    <div class="pill"><div>HP <b id="hpn">200</b> / 200</div><div id="hpw"><div id="hpb"></div></div></div>
+    <div class="pill" id="zt">Zona</div>
+    <div class="pill">Hidup <b id="al">50</b> · Kill <b id="kl">0</b> <button id="ex" class="pill" style="padding:2px 8px">Menu</button></div>
+  </div>
+  <canvas id="mm" width="112" height="112"></canvas>
+  <div id="cdw"><div>Pertandingan dimulai dalam</div><div id="cdn">5</div></div>
+  <div id="toast"></div>
+  <div id="hint">Kiri: gerak · Geser kanan: putar kamera · Tombol Tembak &amp; Medkit di kanan bawah</div>
+</div>
+<div class="pad" id="padL"></div><div class="pad" id="padR"></div>
+<div class="base" id="bL"><div class="knob" id="kL"></div></div>
+<button id="kitB"><i id="kitF"></i><b>Medkit</b><span id="kitN">2</span></button>
+<button id="fireB">TEMBAK</button>
+<div class="scr on" id="load">
+  <div class="card"><h2>Memuat game...</h2><p id="lm">Memuat Three.js</p><button class="btn" id="retry" style="display:none">Coba lagi</button></div>
+</div>
+<div id="rot">Putar HP ke mode landscape (miring) untuk bermain.</div>
+<script src="../backend/config.js"></script>
+<script src="../backend/script.js"></script>
+<script src="../backend/proxy.js"></script>
+<script src="../backend/app.js"></script>
+<script src="../backend/world.js"></script>
+<script src="../backend/zone.js"></script>
+<script src="../backend/entities.js"></script>
+<script src="../backend/input.js"></script>
+<script src="../backend/game.js"></script>
+<script src="../backend/index.js"></script>
+</body></html>
